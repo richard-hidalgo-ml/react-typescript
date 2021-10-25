@@ -1,0 +1,114 @@
+{
+  "ignorePatterns": [
+    "**/*.css"
+  ],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/button-has-type": "off",
+    "react/jsx-boolean-value": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "max-len": "off",
+    "no-alert": "off",
+    "no-console": "off"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "env": {
+        "browser": true,
+        "es2021": true
+      },
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 2015,
+        "sourceType": "module"
+      },
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "airbnb"
+      ],
+      "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+      ],
+      "settings": {
+        "import/resolver": {
+          "typescript": {}
+        }
+      },
+      "rules": {
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+          "error"
+        ],
+        "react/jsx-filename-extension": [
+          "error",
+          {
+            "extensions": [
+              ".tsx"
+            ]
+          }
+        ],
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "ts": "never",
+            "tsx": "never"
+          }
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": [
+          "error"
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+          "warn",
+          {
+            "allowExpressions": true
+          }
+        ],
+        "max-len": "off",
+        "import/prefer-default-export": "off",
+        "react/react-in-jsx-scope": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
+        "react/jsx-uses-react": "off",
+        "react/prop-types": "off",
+        "react/default-props-match-prop-types": "off",
+        "react/require-default-props": "off",
+        "react/no-unused-prop-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/button-has-type": "off",
+        "react/jsx-boolean-value": "off",
+        "no-alert": "off",
+        "no-console": "off",
+        "no-unused-vars": "off",
+        "jsx-a11y/anchor-has-content": "off",
+        "no-undef": "off"
+      }
+    }
+  ]
+}
